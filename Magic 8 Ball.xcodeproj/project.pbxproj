@@ -15,6 +15,7 @@
 		3F16FFA224B2727D0085A788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F16FFA024B2727D0085A788 /* LaunchScreen.storyboard */; };
 		3F16FFAD24B2727D0085A788 /* Magic_8_BallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16FFAC24B2727D0085A788 /* Magic_8_BallTests.swift */; };
 		3F16FFB824B2727D0085A788 /* Magic_8_BallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F16FFB724B2727D0085A788 /* Magic_8_BallUITests.swift */; };
+		3F16FFCE24B27E3F0085A788 /* magic8ball.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3F16FFCD24B27E3F0085A788 /* magic8ball.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3F16FFB324B2727D0085A788 /* Magic 8 BallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Magic 8 BallUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F16FFB724B2727D0085A788 /* Magic_8_BallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Magic_8_BallUITests.swift; sourceTree = "<group>"; };
 		3F16FFB924B2727D0085A788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F16FFCD24B27E3F0085A788 /* magic8ball.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = magic8ball.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				3F16FF9E24B2727D0085A788 /* Assets.xcassets */,
 				3F16FFA024B2727D0085A788 /* LaunchScreen.storyboard */,
 				3F16FFA324B2727D0085A788 /* Info.plist */,
+				3F16FFCD24B27E3F0085A788 /* magic8ball.jpeg */,
 			);
 			path = "Magic 8 Ball";
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				3F16FFA224B2727D0085A788 /* LaunchScreen.storyboard in Resources */,
 				3F16FF9F24B2727D0085A788 /* Assets.xcassets in Resources */,
 				3F16FF9D24B2727C0085A788 /* Main.storyboard in Resources */,
+				3F16FFCE24B27E3F0085A788 /* magic8ball.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
