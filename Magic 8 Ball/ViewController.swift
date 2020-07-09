@@ -37,13 +37,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @objc func dismissKeyboard() {
-        view.endEditing(true)
-    }
-       
-    func hideKeyboard() {
-        let tap:UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        view.addGestureRecognizer(tap)
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     func fadeViewIn(view : UIView, delay: TimeInterval) {
@@ -59,13 +54,12 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
+        textField.resignFirstResponder()
+        return true
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.hideKeyboard()
         self.questionBox.delegate = self
     }
 }
