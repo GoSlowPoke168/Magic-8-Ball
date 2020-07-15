@@ -58,6 +58,28 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        if event?.subtype == UIEvent.EventSubtype.motionShake {
+            print("Device was shaken")
+            questionBox.resignFirstResponder()
+            if questionBox.text != ""{
+                if let randomAnswer = answers.randomElement(){
+                    fadeViewOut(view: answerLabel, delay: 0)
+                    print(randomAnswer)
+                    answerLabel.text = randomAnswer
+                    fadeViewIn(view: answerLabel, delay: 0)
+                }
+            }else {
+                if let randomAnswer = noInputAnswers.randomElement(){
+                    fadeViewOut(view: answerLabel, delay: 0)
+                    print(randomAnswer)
+                    answerLabel.text = randomAnswer
+                    fadeViewIn(view: answerLabel, delay: 0)
+                }
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.questionBox.delegate = self
